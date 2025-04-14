@@ -1,0 +1,63 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+}
+
+android {
+
+    namespace 'com.example.ay2425shapevt6002cemexample'
+    compileSdk 34
+
+    signingConfigs {
+        release {
+            storeFile file("/Users/kiriyukblack/Desktop/VT6002CEM/React-native/keystore")
+            // Replace with the actual path to your keystore file
+            storePassword "171312" // Replace with your keystore password
+            keyAlias "key0" // Replace with your key alias
+            keyPassword "171312" // Replace with your key password
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.example.ay2425shapevt6002cemexample"
+        minSdk 31
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release // Use the same keystore for the debug version
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release // Use the same keystore for the release version
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation 'com.google.firebase:firebase-core:21.0.0' // or the latest version
+    implementation 'com.google.firebase:firebase-auth:23.2.0'
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+
+}
+
+// Apply the Google services plugin
+apply plugin: 'com.google.gms.google-services'
