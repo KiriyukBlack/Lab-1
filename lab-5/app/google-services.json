@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "993757662231",
+    "project_id": "cem-example-666b9",
+    "storage_bucket": "cem-example-666b9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993757662231:android:da2be52910074c553f2052",
+        "android_client_info": {
+          "package_name": "com.example.ay2425shapevt6002cemexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993757662231-7co5goqqve96g0ed3dlt9uvqn8qk5i6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ay2425shapevt6002cemexample",
+            "certificate_hash": "eaeab4e143c5db259bc0e35e044a49e324aed1d5"
+          }
+        },
+        {
+          "client_id": "993757662231-i2e942b9evbtqptjqr11pjmh653g34no.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDOVqPatJg_RHr-Ovy9mmJlVkrYBhRZjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993757662231-i2e942b9evbtqptjqr11pjmh653g34no.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
