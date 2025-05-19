@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Weather Icon -->
+    <ImageView
+        android:id="@+id/ivWeatherIcon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Weather Icon"
+        android:scaleType="centerInside" />
+
+    <!-- Weather Details -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Weather Description -->
+        <TextView
+            android:id="@+id/tvWeatherDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Sky"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Min and Max Temperature -->
+        <TextView
+            android:id="@+id/tvTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min: 15°C, Max: 25°C"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+
+        <!-- Wind Speed and Humidity -->
+        <TextView
+            android:id="@+id/tvWindHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind: 5 m/s, Humidity: 60%"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
